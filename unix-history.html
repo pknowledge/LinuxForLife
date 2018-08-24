@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="cat command in Linux/Unix">
+    <meta name="author" content="LinuxForLife.com">
+    <title>cat command in Linux/Unix</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">LinuxForLife.com</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div><!--navbar -->
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="list-group">
+                <div class="list-group">
+                    <a class="list-group-item " href="what-is-an-perating-system.html"><span class="fa fa-square"></span>&nbsp;What is an Operating System?</a>
+                    <a class="list-group-item  active" href="unix-history.html"><span class="fa fa-square"></span>&nbsp;UNIX History</a>
+                    <a class="list-group-item " href="what-is-linux.html"><span class="fa fa-square"></span>&nbsp;What is Linux?</a>
+                    <a class="list-group-item" href="linux-filesystem.html"><span class="fa fa-square"></span>&nbsp;Linux filesystem</a>
+                    <a class="list-group-item" href="gnu-linux-filesystem-structure.html"><span class="fa fa-square"></span>&nbsp;GNU / Linux filesystem structure</a>
+                    <a class="list-group-item" href="shells-and-file-handling.html"><span class="fa fa-square"></span>&nbsp;Command line interpreters</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-sm-3 -->
+        <div class="col-sm-8">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="page-header">
+                    <h1>Unix</h1>
+                </div>
+                <h1>Unix History</h1>
+                <p>The UNIX operating system was born in the late 1960s. It originally began as a one man project led by Ken Thompson of Bell Labs, and has since grown to become the most widely used operating system.</p>
+                <p>In the time since UNIX was first developed, it has gone through many different generations and even mutations.</p>
+                <ul>
+                    <li>Some differ substantially from the original version, like Berkeley Software Distribution (BSD) or Linux.</li>
+                    <li>Others, still contain major portions that are based on the original source code.</li>
+                </ul>
+                <p>&nbsp;</p>
+                <h1>What is Unix?</h1>
+                <ul>
+                    <li><b>A multi-task and multi-user Operating System -</b> most versions of UNIX are capable of allowing multiple users to log onto the system, and have each run multiple tasks. This is standard for most modern OSs. </li>
+                    <li><b>Large Number of Applications –</b> there are an enormous amount of applications available for UNIX operating systems. They range from commercial applications many free applications. </li>
+                    <li><b>Free Applications and Even a Free Operating System -</b> of all of the applications available under UNIX, many of them are free. The compilers and interpreters that we use in most of the programming courses here at UMBC can be downloaded free of charge. Most of the development that we do in programming courses is done under the Linux OS.</li>
+                    <li><b>Less Resource Intensive -</b> in general, most UNIX installations tend to be much less demanding on system resources. In many cases, the old family computer that can barely run Windows is more than sufficient to run the latest version of Linux.</li>
+                    <li><b>Internet Development -</b> Much of the backbone of the Internet is run by UNIX servers. Many of the more general web servers run UNIX with the Apache web server - another free application. </li>
+                </ul>
+                <p>Some other variants: System V, Solaris, SCO Unix, SunOS, 4.4BSD, FreeBSD, NetBSD, OpenBSD, BSDI</p>
+
+                <p>&nbsp;</p>
+                <h1>Parts of the UNIX OS</h1>
+
+                <ul>
+                    <li><b>The Kernel </b>- handles memory management, input and output requests, and program scheduling. Technically speaking, the kernel is the OS. It provides the basic software connection to the hardware. The kernel is very complex and deals with the inner workings of these things, and is beyond the scope of this course. The kernel is covered in detail in “Operating Systems.”</li>
+                    <li><b>The Shell and Graphical User Interfaces (GUIs) </b>- basic UNIX shells provides a “command line” interface which allows the user to type in commands. These commands are translated by the shell into something the kernel can comprehend, and then executed by the kernel. </li>
+                    <li><b>The Built-in System Utilities</b>- are programs that allow a user to perform tasks which involve complex actions. Utilities provide user interface functions that are basic to an operating system, but which are too complex to be built into the shell. Examples of utilities are programs that let us see the contents of a directory, move & copy files, remove files, etc... </li>
+                    <li><b>Application Software & Utilities </b>- these are not part of the operating system, per se.  They are additional programs that are bundled with the OS distribution, or available separately. These can range from additional or different versions of basic utilities, to full scale commercial applications.</li>
+               </ul>
+                <p>&nbsp;</p>
+                <h1>Flavors of UNIX</h1>
+                <p>These can be grouped into two categories:  Open Source and Proprietary</p>
+                <p>Proprietary:  (redistribution and modification prohibited or restricted; not free)</p>
+
+                <ul>
+                    <li>Solaris - Access to a Solaris UNIX server (solaris.gl.umbc.edu) via SSH access. </li>
+                    <li>IRIX - There are a couple of IRIX machines in the basement of the library, as well as server access (irix.gl.umbc.edu) via SSH access. </li>
+                    <li>Mac OS X - no access currently available at UMBC. </li>
+                    <li>and many others... </li>
+                </ul>
+
+
+                <p>Open Source:  (source code is readily available and free to modify)</p>
+                <ul>
+                    <li>FreeBSD - no access currently available at UMBC. </li>
+                    <li>
+                        Linux Distributions - access is available in the form of dual-boot PCs scattered throughout the Engineering building. There are also several Linux servers (linux.gl.umbc.edu) through which access is available.
+                    </li>
+                    <ul>
+                        <li>RedHat (used by UMBC) and the Fedora Project (maintained by RedHat)</li>
+                        <li>Mandrake</li>
+                        <li>Debian</li>
+                        <li>SuSE </li>
+                        <li>Slackware</li>
+                        <li>and many others...</li>
+                    </ul>
+                    <li>As a side note, Linux is a open source UNIX-based OS that was originally developed in 1991 by Linus Torvalds, a Finnish undergraduate student. </li>
+                    </ul>
+                    <hr>
+
+
+
+
+
+</div>
+        </div>
+
+
+    </div>
+    <!-- Fixed footer -->
+    <!--
+    To change this license header, choose License Headers in Project Properties.
+    To change this template file, choose Tools | Templates
+    and open the template in the editor.
+    -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73773451-2', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+
+    <div class="navbar navbar-inverse navbar-static-bottom" role="navigation">
+        <div class="container">
+            <div class="col-md-4">
+                <p><font color="white">&copy; 2016-2018 LinuxForLife.com</font></p>
+                <a href="https://www.facebook.com/Programmingknowledge"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="https://twitter.com/ProgrammingKnow"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="https://plus.google.com/+Programmingknowledge"><i class="fa fa-google-plus fa-2x"></i></a>
+                <a href="https://www.youtube.com/ProgrammingKnowledge"><i class="fa fa-youtube-square fa-2x"></i></a>
+
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="http://www.codebind.com">CodeBind.com</a></li>
+                    <li><a href="http://www.videotogifs.com/">VideoToGifs.com</a></li>
+                    <li><a href="http://easyonlineconverter.com/">EasyOnlineConverter.com</a></li>
+                    <li><a href="http://sqlitetutorials.com/sqlite-intro.html">SqliteTutorials.com</a></li>
+                    <script src="https://apis.google.com/js/platform.js"></script>
+
+                    <div class="g-ytsubscribe" data-channel="ProgrammingKnowledge" data-layout="full" data-count="default"></div>
+                </ul>
+
+
+
+            </div>
+            <div class="col-md-4">
+                <iframe class="domain-widget-codebind" src="//www.bluehost.com/web-hosting/domaincheckapi/?affiliate=codebind" width="100%"
+                        height="250"></iframe>
+            </div>
+            <div class="col-md-4">
+                <a href="//www.bluehost.com/track/codebind/" target="_blank"> <img border="0" src="//bluehost-cdn.com/media/partner/images/codebind/300x250/300x250BW.png"> </a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="fb-root"></div>
+    <script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Bootstrap core JavaScript
+       ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
